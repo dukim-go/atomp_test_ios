@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D1FE1AD2B467BFA00A0A9AD /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 6D1FE1AC2B467BFA00A0A9AD /* SnapKit-Dynamic */; };
 		6D1FE1B02B467C6500A0A9AD /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 6D1FE1AF2B467C6500A0A9AD /* Then */; };
 		6D5404842B466FA6007150A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5404832B466FA6007150A4 /* AppDelegate.swift */; };
 		6D5404862B466FA6007150A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5404852B466FA6007150A4 /* SceneDelegate.swift */; };
@@ -15,6 +14,7 @@
 		6D54048B2B466FA6007150A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D5404892B466FA6007150A4 /* Main.storyboard */; };
 		6D54048D2B466FA8007150A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D54048C2B466FA8007150A4 /* Assets.xcassets */; };
 		6D5404902B466FA8007150A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D54048E2B466FA8007150A4 /* LaunchScreen.storyboard */; };
+		6DA463412B47C93000FD26F2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6DA463402B47C93000FD26F2 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D1FE1AD2B467BFA00A0A9AD /* SnapKit-Dynamic in Frameworks */,
+				6DA463412B47C93000FD26F2 /* SnapKit in Frameworks */,
 				6D1FE1B02B467C6500A0A9AD /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +46,7 @@
 			children = (
 				6D5404822B466FA6007150A4 /* TestATOMP_iOS */,
 				6D5404812B466FA6007150A4 /* Products */,
+				6DA4633F2B47C93000FD26F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +72,13 @@
 			path = TestATOMP_iOS;
 			sourceTree = "<group>";
 		};
+		6DA4633F2B47C93000FD26F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -88,8 +96,8 @@
 			);
 			name = TestATOMP_iOS;
 			packageProductDependencies = (
-				6D1FE1AC2B467BFA00A0A9AD /* SnapKit-Dynamic */,
 				6D1FE1AF2B467C6500A0A9AD /* Then */,
+				6DA463402B47C93000FD26F2 /* SnapKit */,
 			);
 			productName = TestATOMP_iOS;
 			productReference = 6D5404802B466FA6007150A4 /* TestATOMP_iOS.app */;
@@ -230,7 +238,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -287,7 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -302,8 +310,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8FYBU4VUK4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestATOMP_iOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -316,8 +327,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lgcns.TestATOMP-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lgcns.ios.TestATOMP-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "TestATOMP-iOS_development";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -329,8 +342,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8FYBU4VUK4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestATOMP_iOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -343,8 +359,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lgcns.TestATOMP-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lgcns.ios.TestATOMP-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "TestATOMP-iOS_development";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -394,15 +412,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6D1FE1AC2B467BFA00A0A9AD /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6D1FE1AB2B467BFA00A0A9AD /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
-		};
 		6D1FE1AF2B467C6500A0A9AD /* Then */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6D1FE1AE2B467C6500A0A9AD /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
+		};
+		6DA463402B47C93000FD26F2 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D1FE1AB2B467BFA00A0A9AD /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
